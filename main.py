@@ -9,12 +9,12 @@ import os
 wn = turtle.Screen()
 wn.bgcolor("black")
 wn.title("Space Invaders")
-wn.bgpic("spaceman.gif")
+wn.bgpic("images/spaceman.gif")
 
 # REGISTER SHAPES
-turtle.register_shape("spaceship_kirby.gif")
-turtle.register_shape("kirby.gif")
-turtle.register_shape("heart.gif")
+turtle.register_shape("images/spaceship_kirby.gif")
+turtle.register_shape("images/kirby.gif")
+turtle.register_shape("images/heart.gif")
 
 # DRAW BORDER
 border_pen = turtle.Turtle()
@@ -45,7 +45,7 @@ score_pen.hideturtle()
 # CREATE PLAYER
 player = turtle.Turtle()
 player.color("pink")
-player.shape("kirby.gif")
+player.shape("images/kirby.gif")
 player.penup()
 player.speed(0)
 player.setposition(0, -250)
@@ -64,20 +64,20 @@ for i in range(number_of_enemies):
 for enemy in enemies:
     # CREATE ENEMY
     enemy.color("green")
-    enemy.shape("spaceship_kirby.gif")
+    enemy.shape("images/spaceship_kirby.gif")
     enemy.penup()
     enemy.speed(0)
     x = random.randint(-200, 200)
     y = random.randint(100, 250)
     enemy.setposition(x, y)
 
-enemySpeed = 12
+enemySpeed = 3
 
 
 # PLAYER WEAPON
 bullet = turtle.Turtle()
 bullet.color("white")
-bullet.shape("heart.gif")
+bullet.shape("images/heart.gif")
 bullet.penup()
 bullet.speed(0)
 bullet.setheading(90)
@@ -182,6 +182,7 @@ while True:
             player.hideturtle()
             enemy.hideturtle()
             print("game over.")
+            input("Press enter to finish.")
             break
 
     # MOVE BULLET

@@ -5,4 +5,8 @@ Learning Python through building a game.
 
 To run project
 --------------
-``python3 main.py in root folder``
+- run ``python3 main.py`` in root folder
+
+.. image:: image/kirby-invaders.png
+  :width: 400
+  :alt: Screenshot
