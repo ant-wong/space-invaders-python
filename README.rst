@@ -7,6 +7,6 @@ To run project
 --------------
 - run ``python3 main.py`` in root folder
 
-.. image:: image/kirby-invaders.png
+.. image:: images/kirby-invaders.png
   :width: 400
   :alt: Screenshot
